@@ -1,5 +1,6 @@
 <script setup>
 
+import Souhait from "./Souhait.vue";
 </script>
 
 <template>
@@ -16,97 +17,29 @@
     </ul>
 
     <div class="w-full px-2 bg-white shadow h-full pt-5 flex flex-col gap-y-5">
-      <div class="flex justify-start items-center">
-        <div class="flex justify-start items-center mr-[2rem]">
-          <img src="../assets/Image.png" alt="image drone" class="w-[4.5rem] h-[4.5rem]">
-          <p class="font-jakarta font-medium text-sm text-test max-w-[12.63rem]">Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black</p>
-        </div>
+      <Souhait
+          image="../assets/Image.png"
+          text="Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black"
+          point={199}
+          overpoint={299}
+          status="COLLECTÉS"
+      />
 
-        <div class="max-w-[12.5rem] mr-[8rem]">
-          <span class="text-sm font-public font-normal mr-1 text-[#929FA5] line-through">299K</span>
-          <span class="text-sm font-public font-medium text-test">199k points</span>
-        </div>
+      <Souhait
+          image="../assets/Image.png"
+          text="Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black"
+          point={199}
+          status="COLLECTÉS"
+          bgColor='bg-[#ADB7BC]'
+      />
 
-        <p class="font-public font-semibold text-xl text-green">COLLECTÉS</p>
-
-        <div class="flex items-center gap-2 ml-[8rem]">
-          <button class="bg-primary w-[13.8rem] h-[3rem] rounded-xl px-6 py-2 text-white flex items-center gap-1">
-            AJOUTER AU PANIER
-            <img src="../assets/ShoppingCartSimple.png" alt="Shopping Cart" class="w-[1.25rem] h-[1.25rem]">
-          </button>
-          <img src="../assets/XCircle.png" alt="supprimer" class="w-[1.5rem] h-[1.5rem]">
-        </div>
-
-      </div>
-
-      <div class="flex justify-start items-center">
-        <div class="flex justify-start items-center mr-[2rem]">
-          <img src="../assets/Image.png" alt="image drone" class="w-[4.5rem] h-[4.5rem]">
-          <p class="font-jakarta font-medium text-sm text-test max-w-[12.63rem]">Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black</p>
-        </div>
-
-        <div class="max-w-[12.5rem] mr-[8rem]">
-          <span class="text-sm font-public font-normal mr-1 text-[#929FA5] line-through">299K</span>
-          <span class="text-sm font-public font-medium text-test">199k points</span>
-        </div>
-
-        <p class="font-public font-semibold text-xl text-green">COLLECTÉS</p>
-
-        <div class="flex items-center gap-2 ml-[8rem]">
-          <button class="bg-primary w-[13.8rem] h-[3rem] rounded-xl px-6 py-2 text-white flex items-center gap-1">
-            AJOUTER AU PANIER
-            <img src="../assets/ShoppingCartSimple.png" alt="Shopping Cart" class="w-[1.25rem] h-[1.25rem]">
-          </button>
-          <img src="../assets/XCircle.png" alt="supprimer" class="w-[1.5rem] h-[1.5rem]">
-        </div>
-
-      </div>
-
-      <div class="flex justify-start items-center">
-        <div class="flex justify-start items-center mr-[2rem]">
-          <img src="../assets/Image.png" alt="image drone" class="w-[4.5rem] h-[4.5rem]">
-          <p class="font-jakarta font-medium text-sm text-test max-w-[12.63rem]">Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black</p>
-        </div>
-
-        <div class="max-w-[12.5rem] mr-[8rem]">
-          <span class="text-sm font-public font-normal mr-1 text-[#929FA5] line-through">299K</span>
-          <span class="text-sm font-public font-medium text-test">199k points</span>
-        </div>
-
-        <p class="font-public font-semibold text-xl text-green">COLLECTÉS</p>
-
-        <div class="flex items-center gap-2 ml-[8rem]">
-          <button class="bg-primary w-[13.8rem] h-[3rem] rounded-xl px-6 py-2 text-white flex items-center gap-1">
-            AJOUTER AU PANIER
-            <img src="../assets/ShoppingCartSimple.png" alt="Shopping Cart" class="w-[1.25rem] h-[1.25rem]">
-          </button>
-          <img src="../assets/XCircle.png" alt="supprimer" class="w-[1.5rem] h-[1.5rem]">
-        </div>
-
-      </div>
-
-      <div class="flex justify-start items-center">
-        <div class="flex justify-start items-center mr-[2rem]">
-          <img src="../assets/Image.png" alt="image drone" class="w-[4.5rem] h-[4.5rem]">
-          <p class="font-jakarta font-medium text-sm text-test max-w-[12.63rem]">Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black</p>
-        </div>
-
-        <div class="max-w-[12.5rem] mr-[8rem]">
-          <span class="text-sm font-public font-normal mr-1 text-[#929FA5] line-through">299K</span>
-          <span class="text-sm font-public font-medium text-test">199k points</span>
-        </div>
-
-        <p class="font-public font-semibold text-xl text-green">COLLECTÉS</p>
-
-        <div class="flex items-center gap-2 ml-[8rem]">
-          <button class="bg-primary w-[13.8rem] h-[3rem] rounded-xl px-6 py-2 text-white flex items-center gap-1">
-            AJOUTER AU PANIER
-            <img src="../assets/ShoppingCartSimple.png" alt="Shopping Cart" class="w-[1.25rem] h-[1.25rem]">
-          </button>
-          <img src="../assets/XCircle.png" alt="supprimer" class="w-[1.5rem] h-[1.5rem]">
-        </div>
-
-      </div>
+      <Souhait
+          image="../assets/Image.png"
+          text="Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black"
+          point={199}
+          overpoint={299K}
+          status="COLLECTÉS"
+      />
 
     </div>
 
