@@ -31,7 +31,7 @@ import AddBasketButton from "./AddBasketButton.vue";
               <span class="text-sm font-public font-medium text-test">199k points</span>
             </div>
 
-            <div class="flex justify-around items-center border border-gray-500 shadow w-[10.75rem] h-12 rounded-md">
+            <div class="flex justify-around items-center border border-gray-200 shadow w-[10.75rem] h-12 rounded-md">
               <span class="">-</span>
               <span>01</span>
               <span class="">+</span>
@@ -49,7 +49,7 @@ import AddBasketButton from "./AddBasketButton.vue";
               <span class="text-sm font-public font-medium text-test">199k points</span>
             </div>
 
-            <div class="flex justify-around items-center border border-gray-500 shadow w-[10.75rem] h-12 rounded-md">
+            <div class="flex justify-around items-center border border-gray-200 shadow w-[10.75rem] h-12 rounded-md">
               <span class="">-</span>
               <span>01</span>
               <span class="">+</span>
@@ -67,25 +67,7 @@ import AddBasketButton from "./AddBasketButton.vue";
               <span class="text-sm font-public font-medium text-test">199k points</span>
             </div>
 
-            <div class="flex justify-around items-center border border-gray-500 shadow w-[10.75rem] h-12 rounded-md">
-              <span class="">-</span>
-              <span>01</span>
-              <span class="">+</span>
-            </div>
-
-          </div>
-          <div class="flex justify-start items-center">
-            <div class="flex justify-start items-center mr-[2rem]">
-              <img src="../assets/Image.png" alt="image drone" class="w-[4.5rem] h-[4.5rem]">
-              <p class="font-jakarta font-medium text-sm text-test max-w-[12.63rem]">Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black</p>
-            </div>
-
-            <div class="w-[12.5rem] mr-[4rem]">
-              <span class="text-sm font-public font-normal mr-1 text-[#929FA5] line-through">200K</span>
-              <span class="text-sm font-public font-medium text-test">199k points</span>
-            </div>
-
-            <div class="flex justify-around items-center border border-gray-500 shadow w-[10.75rem] h-12 rounded-md">
+            <div class="flex justify-around items-center border border-gray-200 shadow w-[10.75rem] h-12 rounded-md">
               <span class="">-</span>
               <span>01</span>
               <span class="">+</span>
