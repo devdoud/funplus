@@ -1,15 +1,27 @@
 <script setup>
+  import { computed } from "vue";
   import AddBasketButton from "./AddBasketButton.vue";
 
-  defineProps({
+  const props = defineProps({
     //image: String,
     text: String,
     point: parseInt,
     overpoint: String,
     status: String,
+    bcolor: String
 
   })
 
+  const statusClass = computed(() => {
+    switch (props.status) {
+      case 'COLLECTÉS':
+        return 'text-green-500';
+      case 'POINTS INSUFFISANTS':
+        return 'text-red-500';
+      default:
+        return 'text-gray-500';
+    }
+  });
 
 </script>
 
@@ -25,13 +37,10 @@
       <span class="text-sm font-public font-medium text-test">{{point}}k points</span>
     </div>
 
-    <p class="font-public font-semibold text-sm text-green">{{status}}</p>
+    <p class="font-public font-semibold text-sm text-green w-[12.5rem]" :class="statusClass">{{status}}</p>
 
-    <div class="flex items-center gap-4 ml-[8rem]">
-      <AddBasketButton
-          text="AJOUTER AU PANIER"
-          bgColor="bg-[#ADB7BC]"
-      />
+    <div class="flex items-center gap-4 ml-[2rem]">
+      <slot name="add-basket-button"></slot>
       <img src="../assets/XCircle.png" alt="supprimer" class="w-[1.5rem] h-[1.5rem]">
     </div>
 

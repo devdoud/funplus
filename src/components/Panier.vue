@@ -1,7 +1,10 @@
 <script setup>
+import { ref } from 'vue'
 
 import Souhait from "./Souhait.vue";
 import AddBasketButton from "./AddBasketButton.vue";
+
+const count = ref(1)
 </script>
 
 <template>
@@ -19,7 +22,7 @@ import AddBasketButton from "./AddBasketButton.vue";
 
     <div class="w-full px-2 bg-white shadow h-full pt-5 flex flex-col gap-y-5">
       <div class="flex w-full items-start">
-        <div class="w-2/3 p-6 gap-6">
+        <div class="w-2/3 p-6 flex flex-col gap-6">
           <div class="flex justify-start items-center">
             <div class="flex justify-start items-center mr-[2rem]">
               <img src="../assets/Image.png" alt="image drone" class="w-[4.5rem] h-[4.5rem]">
@@ -32,45 +35,13 @@ import AddBasketButton from "./AddBasketButton.vue";
             </div>
 
             <div class="flex justify-around items-center border border-gray-200 shadow w-[10.75rem] h-12 rounded-md">
-              <span class="">-</span>
-              <span>01</span>
-              <span class="">+</span>
-            </div>
-
-          </div>
-          <div class="flex justify-start items-center">
-            <div class="flex justify-start items-center mr-[2rem]">
-              <img src="../assets/Image.png" alt="image drone" class="w-[4.5rem] h-[4.5rem]">
-              <p class="font-jakarta font-medium text-sm text-test max-w-[12.63rem]">Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black</p>
-            </div>
-
-            <div class="w-[12.5rem] mr-[4rem]">
-              <span class="text-sm font-public font-normal mr-1 text-[#929FA5] line-through">200K</span>
-              <span class="text-sm font-public font-medium text-test">199k points</span>
-            </div>
-
-            <div class="flex justify-around items-center border border-gray-200 shadow w-[10.75rem] h-12 rounded-md">
-              <span class="">-</span>
-              <span>01</span>
-              <span class="">+</span>
-            </div>
-
-          </div>
-          <div class="flex justify-start items-center">
-            <div class="flex justify-start items-center mr-[2rem]">
-              <img src="../assets/Image.png" alt="image drone" class="w-[4.5rem] h-[4.5rem]">
-              <p class="font-jakarta font-medium text-sm text-test max-w-[12.63rem]">Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black</p>
-            </div>
-
-            <div class="w-[12.5rem] mr-[4rem]">
-              <span class="text-sm font-public font-normal mr-1 text-[#929FA5] line-through">200K</span>
-              <span class="text-sm font-public font-medium text-test">199k points</span>
-            </div>
-
-            <div class="flex justify-around items-center border border-gray-200 shadow w-[10.75rem] h-12 rounded-md">
-              <span class="">-</span>
-              <span>01</span>
-              <span class="">+</span>
+              <button type="button" @click="count--">
+                <img src="../assets/Minus.png" alt="Icone minus">
+              </button>
+              <span class="text-[#475156] text-base font-normal font-public">{{count}}</span>
+              <button type="button" @click="count++">
+                <img src="../assets/Plus.png" alt="Icone minus">
+              </button>
             </div>
 
           </div>
@@ -81,19 +52,22 @@ import AddBasketButton from "./AddBasketButton.vue";
           </div>
           <div class="flex flex-col gap-1.5 border-b border-gray-200 pb-4">
             <div class=" flex justify-between">
-              <span class="font-jakarta font-medium text-sm text-[#4C4C4C]">Sous Total</span>
+              <span class="font-jakarta text-sm text-[#4C4C4C]">Sous Total</span>
               <span class="font-public font-medium text-sm text-[#191C1F]">3.198M</span>
             </div>
+
             <div class=" flex justify-between">
-              <span class="font-jakarta font-medium text-sm text-[#4C4C4C]">Sous Total</span>
+              <span class="font-jakarta text-sm text-[#4C4C4C]">Sous Total</span>
               <span class="font-public font-medium text-sm text-[#191C1F]">3.198M</span>
             </div>
+
             <div class=" flex justify-between">
-              <span class="font-jakarta font-medium text-sm text-[#4C4C4C]">Sous Total</span>
-              <span class="font-public font-medium text-sm text-[#191C1F]">3.198M</span>
+              <span class="font-jakarta text-sm text-[#4C4C4C]">Sous Total</span>
+              <span class="font-public font-medium text-sm text-[#191C1F]">Gratuit</span>
             </div>
+
             <div class=" flex justify-between">
-              <span class="font-jakarta font-medium text-sm text-[#4C4C4C]">Sous Total</span>
+              <span class="font-jakarta text-sm text-[#4C4C4C]">Sous Total</span>
               <span class="font-public font-medium text-sm text-[#191C1F]">3.198M</span>
             </div>
           </div>
@@ -105,6 +79,7 @@ import AddBasketButton from "./AddBasketButton.vue";
 
           <AddBasketButton
             text="RETIRER MA COMMANDE"
+            width="w-[20rem]"
           />
         </div>
       </div>

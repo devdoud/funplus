@@ -1,6 +1,7 @@
 <script setup>
 
 import Souhait from "./Souhait.vue";
+import AddBasketButton from "./AddBasketButton.vue";
 </script>
 
 <template>
@@ -21,25 +22,46 @@ import Souhait from "./Souhait.vue";
           image="../assets/Image.png"
           text="Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black"
           point={199}
-          overpoint={299}
+          overpoint={299K}
           status="COLLECTÉS"
-      />
-
-      <Souhait
-          image="../assets/Image.png"
-          text="Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black"
-          point={199}
-          status="COLLECTÉS"
-          bgColor='bg-[#ADB7BC]'
-      />
+      >
+        <template #add-basket-button>
+          <AddBasketButton
+              text="AJOUTER AU PANIER"
+              bgColor="bg-[#32756C]"
+          />
+        </template>
+      </Souhait>
 
       <Souhait
           image="../assets/Image.png"
           text="Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black"
           point={199}
           overpoint={299K}
-          status="COLLECTÉS"
-      />
+          status="POINTS INSUFFISANTS"
+      >
+        <template #add-basket-button>
+          <AddBasketButton
+              text="AJOUTER AU PANIER"
+              bgColor="bg-[#ADB7BC]"
+          />
+        </template>
+      </Souhait>
+
+      <Souhait
+          image="../assets/Image.png"
+          text="Bose Sport Earbuds - Wireless Earphones - Bluetooth In Ear Headphones for Workouts and Running, Triple Black"
+          point={199}
+          overpoint={299K}
+          status="POINTS INSUFFISANTS"
+      >
+        <template #add-basket-button>
+          <AddBasketButton
+              text="AJOUTER AU PANIER"
+              bgColor="bg-[#32756C]"
+          />
+        </template>
+      </Souhait>
 
     </div>
 
