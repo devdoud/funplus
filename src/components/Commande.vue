@@ -1,6 +1,7 @@
 <script setup>
 
 import Activite from "./Activite.vue";
+
 </script>
 
 <template>
@@ -19,25 +20,7 @@ import Activite from "./Activite.vue";
       <p class="font-jakarta font-semibold text-base">Vos produit seront disponible au point de collecte le 14 Février 2025</p>
 
       <div class="pb-6 flex flex-col items-center gap-6 border-b border-gray-200">
-        <img src="../assets/Progress.png" alt="progress bar">
-        <div class="flex gap-16">
-          <div class="flex flex-col items-center gap-1">
-            <img src="../assets/Notebook.png" alt="image de notebook" class="h-8 w-8">
-            <p class="font-jakarta font-semibold text-base text-[#191C1F]">Commande effectée</p>
-          </div>
-          <div class="flex flex-col items-center gap-1">
-            <img src="../assets/Notebook.png" alt="image de notebook" class="h-8 w-8">
-            <p class="font-jakarta font-semibold text-base text-[#191C1F]">Commande effectée</p>
-          </div>
-          <div class="flex flex-col items-center gap-1">
-            <img src="../assets/Notebook.png" alt="image de notebook" class="h-8 w-8">
-            <p class="font-jakarta font-semibold text-base text-[#191C1F]">Commande effectée</p>
-          </div>
-          <div class="flex flex-col items-center gap-1">
-            <img src="../assets/Notebook.png" alt="image de notebook" class="h-8 w-8">
-            <p class="font-jakarta font-semibold text-base text-[#191C1F]">Commande effectée</p>
-          </div>
-        </div>
+
       </div>
 
       <div class="flex flex-col items-start">
