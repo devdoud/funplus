@@ -6,6 +6,6 @@ import Panier from "./components/Panier.vue";
 </script>
 
 <template>
-  <Panier />
+  <Products />
 </template>
 

@@ -20,7 +20,7 @@
 <template>
   <button 
     :class="buttonClass"
-    class="h-12 rounded-xl text-white flex items-center justify-center gap-1 font-public font-bold text-sm"
+    class="h-12 rounded-xl text-white flex items-center justify-center gap-1 font-public font-bold text-sm cursor-pointer"
   >
     {{ text }}
     <img src="../assets/ShoppingCartSimple.png" alt="Shopping Cart" class="w-[1.25rem] h-[1.25rem]">
